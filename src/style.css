@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: 0;
+}
+
+button, input, a {
+    padding: 10px;
+}
+header
+{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+.about{
+    padding: 5px;
+    background-color: silver;
+}
+.about button{
+    background-color: black;
+    color: white;
+}
+.contact{
+    padding: 2px;;
+    background-color: black;
+    color: white;
+}
+.contact input {
+    margin-right: 10px;
+}
+.contact button{
+    background-color: tomato;
+    color: white;
+}
+.services {
+    background-color: gray;
+    text-align: center;
+    padding: 2px;
+}
+.services .flex{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    /* background-color: white;
+    color: black; */
+    /* margin: 5px;
+    padding: 5px; */
+}
+.services .flex .item {
+    background-color: white;
+    color: black;
+    width: 15%;
+    margin: 2%;
+    padding: 2%;
+    box-shadow: 0 10px 10px rgb(99, 221, 28);
+} 
+.services .flex .item *{
+    display:block;
+    margin: 5px auto;
+}   
+.services .flex .item button {
+    background-color: black;
+    color: white;
+    margin: 10px auto;
+}
+.team{
+    padding: 2%;
+    text-align: center;
+}
+.team .flex {
+    display: flex;
+}
+.team .flex .item{
+    width: 21%;
+    padding: 1%;
+    margin: 1%;
+}
+.team .flex .item img {
+    width: 100%;
+}
+.pricing{
+    text-align: center;
+    background-color: gray;
+    padding: 2px;
+}
+.pricing .flex {
+    display: flex;
+    justify-content: center;
+}
+.pricing .flex .item{
+     width: 30%;
+     background-color: white; 
+     margin: 1.5%; 
+     box-shadow: 0 10px 10px red; 
+}
+.pricing .flex .item .header{
+    background-color: black;
+    color: white;  
+    padding: 2px;
+}
+.pricing .flex .item .body{
+    padding: 2px;
+    background-color: skyblue;
+    line-height: 50px;
+}
+.pricing .flex .item .body{
+    font-weight: bold;
+    font-size: 200%;
+}
+.pricing .flex .item .footer{
+    padding: 2px;
+    /* background-color: black; */
+    /* color: white; */
+   
+}
+footer{
+ background-color: black;
+ color: white;  
+ text-align: center; 
+ line-height: 60px;
+}
+
+@media (max-width:500px){
+    button, input, a {
+        padding: 5px;
+    }
+    header{
+        flex-flow: column;
+    }
+    .contact input{
+        display: block;
+        margin: 5px;
+        width:95%;
+    }
+    .contact h1, p{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    } 
+    .services .flex .item {
+        width: 33%;
+    }
+    
+}
